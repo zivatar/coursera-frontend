@@ -1,0 +1,48 @@
+body {
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav.navbar-inverse {
+	background-color: navy;
+}
+
+nav.navbar-inverse a.navbar-brand {
+	font-size: 2.5em;
+	font-weight: bolder;
+	color: white;
+	-webkit-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+nav.navbar-inverse a.navbar-brand:hover {
+	color: orange;
+	margin-left: 50px;
+}
+
+div.box {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #EEE;
+	border: 1px solid #DDD;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+div.box:hover {
+	background-color: #CCCCFF;
+}
+
+h1 {
+	font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+	div#navbar-collapse-menu {
+		display: none !important;
+	}
+} 
