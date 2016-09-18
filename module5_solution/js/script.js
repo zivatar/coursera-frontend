@@ -88,7 +88,6 @@ $ajaxUtils.sendGetRequest(
 });
 // *** finish **
 
-
 // Builds HTML for the home page based on categories array
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
@@ -118,8 +117,10 @@ function buildAndShowHomeHTML (categories) {
       //var homeHtmlToInsertIntoMainPage = buildAndShowCategoriesHTML(chosenCategoryShortName);
       //console.log(homeHtmlToInsertIntoMainPage);
 
-      $dc.loadMenuItems(chosenCategoryShortName);
-      var homeHtmlToInsertIntoMainPage = buildAndShowCategoriesHTML(chosenCategoryShortName);
+      //$dc.loadMenuItems(chosenCategoryShortName);
+      //var homeHtmlToInsertIntoMainPage = buildAndShowCategoriesHTML(chosenCategoryShortName);
+
+      var homeHtmlToInsertIntoMainPage = insertProperty (homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
